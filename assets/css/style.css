@@ -1,4 +1,80 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
+    background:  url(../images/sihun-park-crystal-mine.jpg);
+    color: #10e2ee;
+    padding-top: 40px;
+    line-height: 120%;
+
+
+    
+     
+}
 .crystal-image {
     width: 100px;
     height: 100px;
 }
+
+.game {
+    max-width: 1000px;
+    margin: 0, auto;
+    background-color: black;
+    border: 3px;
+    border-style: solid;
+    border-radius: 45px;
+    border-color: transparent;
+}
+
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 50pt;
+    color: #1260c7;
+    font-weight: 700;
+    padding-top: 40px;
+}
+
+#directions {
+    color: 10e2ee;  
+    padding: 70px;
+    font-size: 18pt;
+   
+}
+
+#targetScore {
+
+    background-color: #1260c7;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px; 
+    margin: auto;
+    border-radius: 30px;  
+    color: white; 
+    line-height: 150%;
+    }
+#winloss{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    color: white; 
+    line-height: 150%; 
+}
+#crystals {
+    display: flex;
+    justify-content: center;
+}
+
+.crystal-image {
+width: 150px;
+height: 150px;
+}
+
+#your-score-text {
+    text-align: center;
+    font-size: 50px;
+    padding: 60px;
+    font-weight: 800;
+    
+}
+

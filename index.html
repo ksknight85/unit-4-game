@@ -10,7 +10,14 @@
     <title>Crystal Collector</title>
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery and javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
@@ -20,21 +27,48 @@
 </head>
 
 <body>
-
-    <h1>Crystal Collector</h1>
-    <h2>Directions:</h2>
-    <h3 id="target-score-text"><span>Target score: </span></h3>
-    <div>
-        <h3 id="wins-text"><span>Wins: 0</span></h3>
-        <h3 id="loss-text"><span>losses: 0</span></h3>
+    <div class="container game">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Crystal Collector</h1>
+            </div>
+        </div>
+        <div class="row" id="directions">
+            <div class="col-md-12">
+                <h2>Crystals each get assigned a random point value. Collecting (clicking on) the
+                    crystals will increase your score. Try to hit the magic number. You lose if you exceed the magic
+                    number.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 offset-md-1" id="targetScore">
+                <h3>Magic Number:</h3>
+                <h3 id="target-score-text"><span>00</span></h3>
+            </div>
+            <div class="col-md-4 offset-md-1" id="winloss">
+                <div class="row">
+                    <h3 id="wins-text"><span>Wins: 0</span></h3>
+                </div>
+                <div class="row">
+                    <h3 id="loss-text"><span>losses: 0</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="crystalCol">
+                <div id="crystals">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 id="your-score-text"><span>Your score: </span></h3>
+            </div>
+        </div>
     </div>
-    <div id="crystals">
-    </div>
-    <h3 id="your-score-text"><span>Your score: </span></h3>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
 </body>
 
 </html>
