@@ -62,14 +62,14 @@ function checkScore() {
 function win() {
     wins++;
     $("#wins-text").text("Wins: " + wins);
-    alert("You Win!!");
+    alert("Congratulations!! You are a math genius!");
     reset();
 }
 // Lose function
 function lose() {
     losses++;
     $("#loss-text").text("Losses: " + losses);
-    alert("You lose");
+    alert("I understand.  Addition is very difficult.");
     reset();
 }
 
